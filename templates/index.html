@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asteria | Magang Kelompok 6</title>
+
+    <link rel="stylesheet" href="../static/style.css" />
+
+    <script src="../static/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- BOX ICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../static/assets/favicon_logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbarv shadow">
+      <div class="logo-wrap">
+        <img src="../static/assets/kelompok-6-logo.png" alt="" />
+        <a href="#" class="navbarv-logo">STARGAZERS</a>
+      </div>
+
+      <div class="navbarv-nav">
+        <a href="homepage.html">Home</a>
+        <a href="#">Event</a>
+        <a href="about.html">About Us</a>
+        <div class="lang-container">
+          <div id="lang" class="language">
+            <a class="lang-opt" href="#">ID</a>
+          </div>
+          <div id="langOpt">
+            <a class="lang-opt" href="#">ENG</a>
+            <a class="lang-opt" href="#">JP</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbarv-extra">
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+
+      <div class="navbarv-extra">
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+      <img src="../static/assets/Asteria_Banner.png" alt="" />
+      <section class="gradient-banner"></section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 id="about-heading" class="heading hidden text-shadow">About Asteria</h2>
+        <p id="about-desc" class="hidden text-shadow">
+          ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang
+          Bersinar". Acara ini melibatkan anggota organisasi organisasi intra
+          sekolah dalam kegiatan menginap bersama, api unggun, permainan dan
+          kegiatan kegiatan yang lainnya dibawah langit yang penuh bintang
+          bintang bersinar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Waves 1 -->
+    <svg
+      class="waves-1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <defs>
+        <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+          <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="white" flood-opacity="1" result="color" />
+          <feComposite in2="offsetBlur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <path
+        filter="url(#waveShadow)"
+        fill="rgb(131, 171, 82)"
+        fill-opacity="1"
+        d="M0,32L20,48C40,64,80,96,120,133.3C160,171,200,213,240,192C280,171,320,85,360,85.3C400,85,440,171,480,202.7C520,235,560,213,600,186.7C640,160,680,128,720,133.3C760,139,800,181,840,165.3C880,149,920,75,960,58.7C1000,43,1040,85,1080,128C1120,171,1160,213,1200,202.7C1240,192,1280,128,1320,117.3C1360,107,1400,149,1420,170.7L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <!-- Waves 2 -->
+      <svg
+        class="waves-2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
+            <feMerge>
+              <feMergeNode in="shadow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <path
+          filter="url(#waveShadow)"
+          fill="rgb(57, 85, 125)"
+          fill-opacity="1"
+          d="M0,128L40,149.3C80,171,160,213,240,208C320,203,400,149,480,154.7C560,160,640,224,720,213.3C800,203,880,117,960,117.3C1040,117,1120,203,1200,234.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section">
+      <div class="container">
+        <h2 class="heading hidden text-shadow">
+          ASTERIA'S ACTIVITIES & PERFORMANCES
+        </h2>
+      </div>
+      <div class="performance">
+        <div class="kelas11">
+          <h1 class="heading text-shadow hidden judul">DAY 1</h1>
+          <div class="card-container">
+            <div
+              onclick="showDetail('Padus Performance', 'bi bi-music-note-beamed', 'Performance yang tak akan kalah seruh dari team Paduan Suara membawakan lagu ‘nama lagu’ dengan suasana yang luar biasa cocok untuk event ASTERIA. Performance ini tentu memberi semangat dan menyenangkan bagi semua yang menyaksikannya.')"
+              class="card hidden"
+            >
+              <i class="bi bi-music-note-beamed"></i>
+              <p class="padus" id="event-name">Padus<br />Performance</p>
+            </div>
+            <div
+              onclick="showDetail('Ice Breaking', 'bi bi-person-arms-up', ' MC akan mengajak siswa siswi untuk mengikuti ice breaking agar dapat memeriahkan acara dan menegaskan kesemangatan diantara siswa siswi sembari meningkatkan tingkat percaya diri dari setiap siswa. Salah satu contoh ice breaking adalah quiz mengenai IGS.')"
+              class="card hidden"
+            >
+              <i class="bi bi-person-arms-up"></i>
+              <p class="ice" id="event-name">Ice<br />Breaking</p>
+            </div>
+            <div
+              onclick="showDetail('Leadership Seminar', 'bi bi-easel-fill', 'Seorang lecturer akan memberi materi berkaitan dengan leadership kepada murid myrid. Dengan diadakannya seminar ini, siswa siswi bisa mendalami ilmu masing masing tentang skill kepemimpinan. Seminar ini memberi arahan dan membekali mereka untuk mengembang skillnya.')"
+              class="card hidden"
+            >
+              <i class="bi bi-easel-fill"></i>
+              <p class="leader" id="event-name">Leadership<br />Seminar</p>
+            </div>
+            <div
+              onclick="showDetail('Cooking Activities', 'bx bxs-bowl-rice', 'Siswa siswi akan diminta untuk memasak makan malamnya di sekolah. Mereka akan dibagi menjadi kelompok kelompok kecil. Siswa siswi dapat menentukan hindangan yang dimasak dan membawa bahan bahannya dari rumah. Kegiatan ini dirancang untuk melatih skill dan keterampilan memasak.')"
+              class="card hidden"
+            >
+              <i class="bx bxs-bowl-rice"></i>
+              <p class="cooking" id="event-name">Cooking<br />Activities</p>
+            </div>
+            <div
+              onclick="showDetail('Games', 'bx bxs-game', 'Menyediakan kesempatan untuk siswa-siswi supaya bisa berpartisipasi dalam permainan yang menjalurkan semangat kompetitif, menguatkan keakraban antara anggota, dan meningkatkan keterampilan interpersonal. Games yang akan diselenggarakan meliputi Musical chairs, Ular Naga, Estafet Sarung dan Balap Balon.')"
+              class="card hidden"
+            >
+              <i class="bx bxs-game"></i>
+              <p class="games" id="event-name">Games</p>
+            </div>
+            <div
+              onclick="showDetail('Lomba Yel Yel', 'bx bxs-megaphone', 'Siswa Siswi akan diminta untuk menampilkan hasil kerjasamanya dalam bentuk yelyel. Kegiatan ini efektif dalam meningkatkan kekerabatan antar anggota kelompok dan mengurangi rasa kemaluan seseorang.')"
+              class="card hidden"
+            >
+              <i class="bx bxs-megaphone"></i>
+              <p class="yelyel" id="event-name">Lomba<br />Yel Yel</p>
+            </div>
+            <div
+              onclick="showDetail('Campfire', 'bx bxs-hot', 'Siswa siswi akan duduk mengelilingi api unggun yang dinyalakan di tengah dengan jarak yang aman. Kegiatan ini bisa diiringi dengan lagu atau musik yang cocok dengan suasananya. Momen ini akan dikenang siswa siswi sebagai puncak di masa masa sekolahnya.')"
+              class="card card-7 hidden"
+            >
+              <i class="bx bxs-hot"></i>
+              <p class="campfire" id="event-name">Campfire</p>
+            </div>
+          </div>
+        </div>
+        <div class="kelas12">
+          <h1 class="heading text-shadow hidden judul">DAY 2</h1>
+          <div class="card-container">
+            <div
+              onclick="showDetail('Band Performance', 'fa-solid fa-guitar', 'Pertunjukkan yang dibawa band-band ‘nama band’ yang sungguh mengkagumkan, Menunjukkan skill dan kerjasama antara anggota band. Dengan lagu ‘nama lagu’ yang menciptakan suasana penuh energi tentunya akan menyemangati siswa siswi untuk hari kedua ASTERIA')"
+              class="card hidden"
+            >
+              <i class="fa-solid fa-guitar"></i>
+              <p class="band" id="event-name">
+                Band <br />
+                Performance
+              </p>
+            </div>
+            <div
+              onclick="showDetail('Solo Performance', 'bx bxs-microphone-alt', 'Performance- performance yang menarik perhatian dan akan dikenang penyaksinya yang dibawa oleh: Alif Danendra, Jason Marvel dan Muhammad Yusuf dengan berbagai lagu yang sedang populer. ')"
+              class="card hidden"
+            >
+              <i class="bx bxs-microphone-alt"></i>
+              <p class="solo" id="event-name">
+                Solo <br />
+                Performance
+              </p>
+            </div>
+            <div
+              onclick="showDetail('Jalan Santai', 'fa-solid fa-person-running', 'Siswa siswi akan jalan bersama di pagi hari berdasarkan rute yang telah ditentukan. Pasti, kegiatan ini akan menyegarkan mereka dan melatih tubuhnya supaya menjadi lebih sehat dan bugar.')"
+              class="card hidden"
+            >
+              <i class="fa-solid fa-person-running"></i>
+              <p class="jalan" id="event-name">Jalan <br />Santai</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail -->
+    <div class="detail" id="detail">
+      <div class="detail-container">
+        <div class="content">
+          <div onclick="closeDetail()" class="close">X</div>
+          <div class="content-desc">
+            <h2 id="detail-heading">Band Performance</h2>
+            <p id="detail-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              magni impedit veniam quia quod unde dignissimos officia
+              consequuntur harum. Quidem necessitatibus doloribus quae at! Cum
+              hic commodi beatae maxime voluptates.
+            </p>
+          </div>
+          <div class="content-logo">
+            <i id="detail-logo"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Waves 3 -->
+
+    <svg
+      class="waves-3"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <defs>
+        <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+          <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="white" flood-opacity="1" result="color" />
+          <feComposite in2="offsetBlur" operator="in" result="shadow" />
+          <feMerge>
+            <feMergeNode in="shadow" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <path
+        filter="url(#waveShadow)"
+        fill="rgb(223, 199, 91)"
+        fill-opacity="1"
+        d="M0,64L80,101.3C160,139,320,213,480,245.3C640,277,800,267,960,229.3C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!-- Form Section -->
+    <section id="form" class="section">
+      <div class="form-container">
+        <h2 id="form-heading">
+          Bergabunglah dalam Petualangan Malam yang Tak Terlupakan di Asteria!
+        </h2>
+        <p id="form-desc">
+          Saat malam turun, bintang-bintang menyaksikan kegembiraan tak terbatas
+          di SMA Ignatius Global School! Siapkan dirimu untuk merasakan
+          petualangan yang menggetarkan hati dalam event Asteria, night camp
+          eksklusif kami. Dengan campuran sempurna antara tantangan seru,
+          kegiatan kreatif, dan momen kebersamaan yang tak terlupakan, Asteria
+          adalah panggung bagi para pemberani yang siap mengukir kenangan malam
+          yang magis.
+        </p>
+
+        <h3 id="form-join">Jadi bagian dari Asteria sekarang!</h3>
+        <div class="btn-container">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1eMbDDPdKCNFjtGPLn_MMcGZ6kL9DhWyRYLRvpwfU8IRC-w/viewform" target="_blank" class="join-btn" id="submit-btn" type="submit">Join Us</a>
+          <a href="https://www.twibbonize.com/asteria-24" target="_blank" class="twibbon-btn" id="submit-btn" type="submit">Download Twibbon</a>
+        </div>
+      </div>
+
+      <!-- Starfall Animation -->
+      <div class="starfall">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+
+      <!-- Waves 4 -->
+      <svg
+        class="waves-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <filter id="waveShadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
+            <feOffset in="blur" dx="0" dy="0" result="offsetBlur" />
+            <feFlood flood-color="white" flood-opacity="1" result="color" />
+            <feComposite in2="offsetBlur" operator="in" result="shadow" />
+            <feMerge>
+              <feMergeNode in="shadow" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <path
+          filter="url(#waveShadow)"
+          fill="rgb(63, 102, 155)"
+          fill-opacity="1"
+          d="M0,0L40,26.7C80,53,160,107,240,122.7C320,139,400,117,480,101.3C560,85,640,75,720,64C800,53,880,43,960,74.7C1040,107,1120,181,1200,186.7C1280,192,1360,128,1400,96L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Event Information -->
+    <section id="information">
+      <div class="event-credit">
+        <h1>Asteria</h1>
+        <p>Kelompok 6 Magang OSIS SMA Ignatius Global School 2024/25</p>
+      </div>
+      <a
+        href="https://www.google.com/maps/place/Ignatius+Global+School/@-2.9710393,104.7589212,17z/data=!3m1!4b1!4m5!3m4!1s0x2e3b77abf5ea07a9:0x753dfe8d5c2ff65d!8m2!3d-2.9710361!4d104.761108?hl=id&shorturl=1"
+        class="location"
+        target="_blank"
+      >
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>
+          Jl. Mayor Ruslan No.118, 9 Ilir, Kec. Ilir Tim. I, Kota Palembang,
+          Sumatera Selatan 30114
+        </p>
+      </a>
+      <div class="contact-person">
+        <a href="#" target="_blank" class="sosmed instagram">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="#" target="_blank" class="sosmed twitter"><i class="bi bi-twitter"></i> Twitter</a>
+        <a href="#" target="_blank" class="sosmed tiktok"><i class="bi bi-tiktok"></i> Tiktok</a>
+        <a href="#" target="_blank" class="sosmed line"><i class="bi bi-line"></i> Line</a>
+        <a href="#" target="_blank" class="sosmed youtube"><i class="bi bi-youtube"></i> Youtube</a>
+        <a href="#" target="_blank" class="sosmed email">
+          <i class="bi bi-envelope-fill"></i> Email
+        </a>
+      </div>
+    </section>
+
+    <!-- ChatBox -->
+    <img
+      onclick="showMascot()"
+      id="chat-mascott"
+      src="../static/assets/palak_otter-removebg-preview.png"
+      alt=""
+    />
+    <div class="chat-box" id="chatBox"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Copyright © 2024 Sekbid Multimedia (Kelompok 6 / STARGAZERS) Website
+          Asteration
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
