@@ -47,7 +47,6 @@ const events = {
         "合唱チームによる‘曲名’の演奏は、ASTERIAイベントにぴったりの雰囲気を提供し、非常に興奮するパフォーマンスです。このパフォーマンスは、観客全員を元気づけ、楽しませることでしょう。",
     },
   },
-  // ... event lainnya ...
   "Band Performance Day2": {
     // Key unik
     ID: {
@@ -168,24 +167,7 @@ const events = {
         "学生は、安全に中央で点火された焚き火の周りに座ります。この活動は、雰囲気に合った歌や音楽で伴奏されることがあります。この瞬間は、学生にとって学校生活のハイライトとして記憶に残るでしょう。",
     },
   },
-  "Band Performance": {
-    ID: {
-      heading: "Pertunjukan Band",
-      description:
-        "Pertunjukkan yang dibawa band-band ‘nama band’ yang sungguh mengkagumkan, Menunjukkan skill dan kerjasama antara anggota band. Dengan lagu ‘nama lagu’ yang menciptakan suasana penuh energi tentunya akan menyemangati siswa siswi untuk hari kedua ASTERIA.",
-    },
-    ENG: {
-      heading: "Band Performance",
-      description:
-        "The performances by the bands ‘band name’ are truly impressive, showcasing their skill and teamwork. With the song ‘song name,’ which creates an energetic atmosphere, it will undoubtedly energize the students for the second day of ASTERIA.",
-    },
-    JP: {
-      heading: "バンドパフォーマンス",
-      description:
-        "‘バンド名’によるパフォーマンスは本当に素晴らしく、彼らのスキルとチームワークを示しています。‘曲名’という曲でエネルギッシュな雰囲気を作り出し、ASTERIAの2日目に学生たちを活気づけることでしょう。",
-    },
-  },
-  "Solo Performance2": {
+  "Solo Performance Day2": {
     ID: {
       heading: "Pertunjukan Solo",
       description:
@@ -202,7 +184,7 @@ const events = {
         "観客に強い印象を残す魅力的なパフォーマンスは、Alif Danendra、Jason Marvel、Muhammad Yusufによって提供され、さまざまな人気の曲が演奏されます。",
     },
   },
-  "Jalan Santai2": {
+  "Jalan Santai Day2": {
     ID: {
       heading: "Jalan Santai",
       description:
@@ -236,16 +218,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const desc = document.getElementById("detail-desc");
 
   const about = {
-    ID: "ASTEREIA（A Story to Memorialize）は「輝く星々」を意味します。このイベントは、星々が輝く空の下で、宿泊、キャンプファイヤー、ゲーム、その他のアクティビティに参加する学校内の組織メンバーを巻き込むものです。",
+    ID: 'ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang Bersinar". Acara ini melibatkan anggota organisasi organisasi intra sekolah dalam kegiatan menginap bersama, api unggun, permainan dan kegiatan kegiatan yang lainnya dibawah langit yang penuh bintang bintang bersinar.',
     ENG: 'ASTEREIA (A Story to Memorialize) means "Shining Stars." This event involves members of intra-school organizations in activities such as an overnight stay, a bonfire, games, and other activities under a sky filled with shining stars.',
     JP: "ASTEREIA（A Story to Memorialize）は「輝く星々」を意味します。このイベントは、星々が輝く空の下での宿泊、キャンプファイヤー、ゲーム、その他のアクティビティに参加する学校内の組織メンバーを巻き込むものです。",
   };
 
   const form = {
     ID: [
-      "Asteriaで忘れられない夜の冒険に参加しよう！",
-      "夜が訪れると、星々がIgnatius Global Schoolでの無限の喜びを見守ります！心が震えるような冒険をAsteriaで体験する準備をしてください。スリリングな挑戦、創造的なアクティビティ、忘れられない仲間とのひとときを完璧に融合させたAsteriaは、魔法のような夜の思い出を刻む準備ができた勇敢な人々のための舞台です。",
-      "今すぐAsteriaの一部になろう！",
+      "Bergabunglah dalam Petualangan Malam yang Tak Terlupakan di Asteria!",
+      "Saat malam turun, bintang-bintang menyaksikan kegembiraan tak terbatas di SMA Ignatius Global School! Siapkan dirimu untuk merasakan petualangan yang menggetarkan hati dalam event Asteria, night camp eksklusif kami. Dengan campuran sempurna antara tantangan seru, kegiatan kreatif, dan momen kebersamaan yang tak terlupakan, Asteria adalah panggung bagi para pemberani yang siap mengukir kenangan malam yang magis.",
+      "Jadi bagian dari Asteria sekarang!",
     ],
     ENG: [
       "Join the Unforgettable Night Adventure at Asteria!",
