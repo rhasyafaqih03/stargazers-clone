@@ -116,7 +116,7 @@ const events = {
         "学生は学校で自分たちの夕食を作るように求められます。彼らは小グループに分けられ、調理する料理を選び、材料を家から持参することができます。この活動は、彼らの料理スキルと能力を育成するために設計されています。",
     },
   },
-  "Games": {
+  Games: {
     ID: {
       heading: "Permainan",
       description:
@@ -150,7 +150,7 @@ const events = {
         "学生は、チームワークの結果を応援歌の形で発表するように求められます。この活動は、グループの結束を高め、個人の恥ずかしさを減らすのに効果的です。",
     },
   },
-  "Campfire": {
+  Campfire: {
     ID: {
       heading: "Api Unggun",
       description:
@@ -216,6 +216,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const formJoin = document.getElementById("form-join");
   const heading = document.getElementById("detail-heading");
   const desc = document.getElementById("detail-desc");
+  const dayone = document.getElementById("day-1");
+  const daytwo = document.getElementById("day-2");
+  const asteriaAct = document.getElementById("asteria-act");
+  const abtHead = document.getElementById("about-heading");
 
   const about = {
     ID: 'ASTEREIA (A story to memorialize) Memiliki arti "Bintang Bintang Bersinar". Acara ini melibatkan anggota organisasi organisasi intra sekolah dalam kegiatan menginap bersama, api unggun, permainan dan kegiatan kegiatan yang lainnya dibawah langit yang penuh bintang bintang bersinar.',
@@ -259,16 +263,28 @@ document.addEventListener("DOMContentLoaded", function () {
         formHead.innerText = form.ID[0];
         formDesc.innerText = form.ID[1];
         formJoin.innerText = form.ID[2];
+        dayone.innerText = "HARI 1";
+        daytwo.innerText = "HARI 2";
+        asteriaAct.innerText = "AKTIVITAS DAN KEGIATAN ASTERIA";
+        abtHead.innerText = "Tentang ASTERIA";
       } else if (currentLang.innerText === "ENG") {
         aboutDesc.innerText = about.ENG;
         formHead.innerText = form.ENG[0];
         formDesc.innerText = form.ENG[1];
         formJoin.innerText = form.ENG[2];
+        dayone.innerText = "DAY 1";
+        daytwo.innerText = "DAY 2";
+        asteriaAct.innerText = "ASTERIA'S ACTIVITIES & PERFORMANCES";
+        abtHead.innerText = "About ASTERIA";
       } else if (currentLang.innerText === "JP") {
         aboutDesc.innerText = about.JP;
         formHead.innerText = form.JP[0];
         formDesc.innerText = form.JP[1];
         formJoin.innerText = form.JP[2];
+        dayone.innerText = "1日目";
+        daytwo.innerText = "2日目";
+        asteriaAct.innerText = "アステリアの活動とパフォーマンス";
+        abtHead.innerText = "アステリアについて";
       }
 
       // Update teks pada kartu
